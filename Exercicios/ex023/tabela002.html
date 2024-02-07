@@ -49,7 +49,14 @@
             padding-right: 3px;
         }
         
+        caption{
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
 
+      
 
 
 
@@ -59,6 +66,7 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
+        CAPTION - legenda da tabela
         TABLE
           THEAD
             TR, TD, TH
@@ -68,11 +76,12 @@
             TR, TD, TH        
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% População Total</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+                <th scope="col">% População Total</th>
             </tr>
         </thead>
 
@@ -221,7 +230,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th class="txt">Total de Habitantes</th>
+                <th class="txt" scope="row">Total de Habitantes</th>
                 <td class="num"><strong>203 062 512</strong>	</td>
                 <td></td>
             </tr>
