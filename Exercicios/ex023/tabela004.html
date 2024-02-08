@@ -13,22 +13,20 @@
             height: 400px;
         }
 
-        
-
-        tr > th{
-            
-            
+        th, td{
             border: 1px solid black;
+            padding: 10px;
         }
 
-        tr > td{
-            
-            border: 1px solid black;
+        thead > tr > th{
+            padding-bottom: 10px;
         }
 
-
-
-
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
 
 
 
@@ -36,13 +34,19 @@
 </head>
 <body>
     <table>
-    <tr> <!--Linha 01-->
+        <caption>
+            Filmes Favoritos
+        </caption>
+
+    <thead>
+        <tr> <!--Linha 01-->
         <th>Grupo</th>
         <th>Nomes</th>
         <th colspan="3">Filmes</th>
-
-    </tr>
-
+        </tr>
+    </thead>
+    
+    <tbody>
     <tr> <!--Linha 02-->
         <th rowspan="3">mulheres</th>
         <td>Ana Maria Santos</td>
@@ -93,23 +97,7 @@
 
     </tr>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</tbody>
 </table>
 </body>
 </html>
