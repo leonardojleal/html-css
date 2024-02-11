@@ -11,10 +11,10 @@
     </style>
 </head>
 <body>
-    <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="on">
+    <h1>Meu primeiro formulário</h1> <!--Utilizando o metodo POST, as informações não aparecem na URL-->
+    <form action="cadastro.php" method="post" autocomplete="on">
 
-        <p><label for="inome">Nome: </label>
+        <p><label for="inome">Nome: </label> <!--O metodo LABEL serve para ligar as informações-->
             <input type="text" name="nome" id="inome"></p>
 
         <p><label for="isobrenome">Sobrenome:</label> 
